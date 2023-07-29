@@ -1,0 +1,81 @@
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+:root{
+  --button-size: 300px;
+  background-image: url("images/bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-position: center; */
+  background-color:black;
+}
+
+img{
+  width: var(--button-size);
+  height: var(--button-size);
+}
+h1{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 55px;
+  padding-top: 60px;
+  padding-top: 60px;
+  /* margin-left: 25px; */
+  width: 100%;
+  letter-spacing: 50px;
+  color: #14ff00;
+  text-align: center;
+  text-shadow:
+    0 0 42px #00ff30,
+    0 0 82px #00ff30,
+    0 0 92px #00ff30,
+    0 0 102px #00ff30,
+    /* 0 0 7px #00ff30, */
+    0 0 10px #00ff30,
+    0 0 21px #00ff30;
+}
+
+button{
+  /* padding: 0px;
+  position: relative;
+  text-align: center;
+  color: white;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit; */
+
+
+  background-color: #2e7b40; /* Green */
+  border: none;
+  color: #2e7b40;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 130px;
+  border-radius: 25%;
+
+  filter: brightness(1.0);
+   transition: transform .3s ease-in-out;
+
+}
+button:active{
+  /* background-color: #aaa; */
+  filter: brightness(0.4);
+  /* transform: rotate(360deg); */
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--button-size)); /* Adjust the number and size of columns */
+    grid-auto-rows: var(--button-size);
+    gap: 20px; /* Add some space between buttons */
+    justify-content: center;
+}
